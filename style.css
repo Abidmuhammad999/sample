@@ -1,0 +1,198 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    color: #74777d;
+  }
+  .baground-Full{
+    background: #201331;
+  }
+  
+  a {
+    color: #dd1414;
+  }
+  :root {
+    --primary-color: #2b81e4;
+    --secondary-color: #eee;
+    --white-color: #fff;
+    --grey-color: #555;
+    --light-grey-color: #777;
+  }
+  
+  
+  a:hover {
+    color: #ed3792;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    right: 15px;
+    bottom: 15px;
+    background: #e77f67;
+    color: #fff;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+  }
+  
+  .back-to-top:hover {
+    color: #fff;
+    background: #ca3a3a;
+    
+    transition: background 0.2s ease-in-out;
+  }
+.contact-new {
+  
+
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+    background-image: url("contactbg.png");
+    border-radius: 0.5rem;
+    background-size: cover;
+    animation: contact-bg 35s infinite;
+  } 
+  
+  
+  .contact-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--white-color);
+    text-shadow: 0 1rem 2rem #000;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form-new {
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(255, 255, 255,0.55);
+    margin: auto;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px #000;
+   
+  }
+  
+  .input-group-new {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+  }
+  
+  .input-groups {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-groups .input-group-new {
+    width: 48.5%;
+  }
+  
+  .input-group-new input,
+  .input-group-new textarea {
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: var(--secondary-color);
+    border: 0.1rem solid var(--secondary-color);
+    font-size: 1rem;
+    color: var(--light-grey-color);
+    border-radius: 0.5rem;
+    transition: border 0.3s;
+  }
+  
+  .input-group-new input:focus,
+  .input-group-new textarea:focus {
+    border: 0.1rem solid #ccc;
+  }
+  
+  .input-group-new label {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--grey-color);
+    position: absolute;
+    
+  }
+  
+  .form-btn {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+    background: rgb(63,82,251);
+    background: radial-gradient(circle, rgba(63,82,251,1) 0%, rgba(170,70,252,0.9808298319327731) 95%);  color: var(--white-color);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  align-self: center;
+    transition: background-color 0.4s;
+    justify-content: center;
+  }
+  
+  .form-btn:hover {
+    background: rgb(170,70,252);
+    background: radial-gradient(circle, rgba(170,70,252,1) 0%, rgba(63,82,251,1) 95%);
+  }
+  
+  .input-group textarea {
+    max-height: 13rem;
+   
+  }
+  @media (max-width: 800px){
+    .contact-form-new {
+      width: 100%;
+    }
+  }
+  @media (max-width: 650px){
+    .contact-heading {
+      font-size: 2rem;
+    }
+  
+    .contact-form-new {
+      padding: 1rem;
+      height: 43rem;
+    }
+  }
+  
+  @keyframes contact-bg {
+    0% {
+      background-color: #3d3d3d;
+    }
+    25% {
+      background-color: #ced8e4;
+    }
+    50% {
+      background-color: #1e81f3;
+    }
+    75% {
+      background-color: #ff7842;
+    }
+    100% {
+      background-color: #3d3d3d;
+    }
+  }
